@@ -1,0 +1,16 @@
+<div class="wrapper_2">
+                <div class="posts-show">
+                <%= form_tag("/posts/#{@post.id}/update") do%>
+                    <div class="form_error">
+                    </div>
+                    <div class="content"><h4><textarea name="content"><%= @post.content %></textarea></h4></div>
+                    <div class="edit"><button type="submit" value="保存">保存</button></div>
+                    <%end%>
+                    <% if flash[:notice]%>
+                    <div class="flash">
+                        <%= flash[:notice]%>
+                    </div>
+                    <%end%>
+                </div>
+                
+</div>

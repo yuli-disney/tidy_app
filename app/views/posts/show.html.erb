@@ -1,0 +1,9 @@
+<div class="wrapper_2">
+                <div class="posts-show">
+                    <div class="content"><h4><%= @post.content %></h4></div>
+                    <div class="created"><p><%= @post.created_at %></p></div>
+                    <div class="edit_1"><%= link_to("編集", "/posts/#{@post.id}/edit",:style=>"color:black;") %>
+                    <%= link_to("削除", "/posts/#{@post.id}/destroy",style:"color:black;", method: "post" )%></div>
+                </div>
+                
+</div>
