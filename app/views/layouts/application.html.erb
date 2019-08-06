@@ -13,9 +13,16 @@
   <div class="header">
       <a href="/"><div class="logo"><h2>Tidy_app</h2></div></a>
       <div class="user">
-          <a href ="/posts/index"><div class="post">投稿一覧</div></a>
-          <div class="new">新規登録</div>
-          <div class="login">ログイン</div>
+        <% if session[:user_name]%>
+          <a href ="/posts/index"><div class="postindex">投稿一覧</div></a>
+          <a href="/posts/often"><div class="menu-new">よく見るページ</div></a>
+           <a href="/posts/later"><div class="menu-new"> あとで見るページ</div></a>
+           <a href="/posts/useful"><div class="menu-new"> 役に立つもの</div></a>
+           <a href="/posts/save"><div class="menu-new"> とっておきたいページ </div></a>  
+        <% else %>
+        <a href ="/users/index"><div class="postindex">新規登録</div></a>
+        <a href ="/users/login"> <div class="postindex">ログイン</div></a>
+        <%end%>
       </div>
   </div>
   </header>

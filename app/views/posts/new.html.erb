@@ -16,8 +16,8 @@
         <option value="とっておきたいページ">とっておきたいページ</option>
 
     </select>
-    <textarea name="content" id="" cols="30" rows="1" class="name">名前をつける</textarea>
-    <textarea name="url" id="" cols="30" rows="1" class="url">URLを入力</textarea>
+    <textarea name="content" id="" cols="30" rows="1" class="name" placeholder="名前をつける"></textarea>
+    <textarea name="url" id="" cols="30" rows="1" class="url" placeholder="URLを入力"></textarea>
     <div class="iconjpg">
         <%= image_tag('icon.jpg', :width => "100")  %>
         <button type="submit" class="putaway"></button>
@@ -28,10 +28,11 @@
 </div>
 <div class="menu">
     <div class="menus menu-right">
-           <div class="menu-new"><a href="/posts/often"><p>よく見るページ</p></a></div>
-           <div class="menu-new"> あとで見るページ</div>
-           <div class="menu-new"> 役に立つもの</div>
-           <div class="menu-new"> とっておきたいページ </div>               
+            <% if session[:user_name]%>
+            こんにちは、<%= session[:user_name] %>さん
+            <%= link_to("ログアウト","/logout",{method: :post})%>
+            <% else %>
+            <% end %>
     </div>
     
 </div>

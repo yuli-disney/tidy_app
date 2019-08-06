@@ -1,9 +1,7 @@
-
-            <div class="wrapper_1">
+<div class="wrapper_1">
                 <div class="aboveposts">
-                    <h2>投稿一覧</h2>
-                    <% if session[:user_name]%>
-                   <p><a href="/posts/bedit">
+                    <h2>とっておきたいページ</h2>
+                   <p><a href="/posts/savebedit">
                 編集する</a> </p>
                 </div>
                 <a href="/"><div class="newfix">
@@ -18,8 +16,8 @@
                         
                     <a href="<%= post.url%>" target="_blank">
                     <div class="posts-index-item">
-                        
                         <p class="post-contents"><%= post.content%></p>
+                    
                         <p class="post-select"><%= post.select %><p>
                     </div>
                     </a>
@@ -27,11 +25,7 @@
                     <%end %>
                 </div>
                 
-                 <% else%>  
-                 <div class="error-message" >
-                 <%= @error_message %>
-                 </div>
-                 <%end%>
+                    
                 </div>
             </div>
 </html>
