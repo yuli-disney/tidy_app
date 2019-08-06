@@ -1,0 +1,42 @@
+<div class="body">
+<div class="question">
+    <h1>あとで見よう、が<br>
+    たまっていませんか?</h1>
+    <p class="explanation">
+        クリックすると入力したURLのページに飛んでいくボタンが作れます<br>
+        スマホやPCの開きっぱなしだけど消したくないタグをこっちにうつしてサクサクしましょう！
+    </p>
+    <div class="tidyup">
+    <%= form_tag("/posts/create") do %>
+    <select name="select">
+        <option value="未選択" selected>ジャンルを選ぶ</option>
+        <option value="よく見るページ">よく見るページ</option>
+        <option value="あとで見るページ">あとで見るページ</option>
+        <option value="役にたつもの">役にたつもの</option>
+        <option value="とっておきたいページ">とっておきたいページ</option>
+
+    </select>
+    <textarea name="content" id="" cols="30" rows="1" class="name" placeholder="名前をつける"></textarea>
+    <textarea name="url" id="" cols="30" rows="1" class="url" placeholder="URLを入力"></textarea>
+    <div class="iconjpg">
+        <%= image_tag('icon.jpg', :width => "100")  %>
+        <button type="submit" class="putaway"></button>
+    </div>
+    <%end%>
+    </div>
+    
+</div>
+<div class="menu">
+    <div class="menus menu-right">
+            <% if session[:user_name]%>
+            こんにちは、<%= session[:user_name] %>さん
+            <%= link_to("ログアウト","/logout",{method: :post})%>
+            <% else %>
+            <% end %>
+    </div>
+    
+</div>
+</div>
+</body>
+</html>
+

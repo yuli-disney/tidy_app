@@ -1,0 +1,17 @@
+<div class="createaccountbackground"></div>
+    <div class="createaccount">
+        <h1>Tidy_appへようこそ！</h1>
+        <%= form_tag("/users/create") do %>
+        <div class="inputname">
+            <input type="text" name="name" placeholder="Name">
+        </div>
+        <div class="inputpassword">
+            <input type="password" name="password" placeholder="Password">
+        </div>
+        <div class="submitaccount">
+            <input type="submit" value="登録">
+
+        
+        </div>
+        <% end %>
+    </div>

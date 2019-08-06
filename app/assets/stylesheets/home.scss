@@ -1,0 +1,264 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+width:100%;
+
+}
+
+body {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+}
+
+.header {
+    color:white;
+    
+     height:140px;
+    background-color: rgba(0,0,0,0.8);
+
+}
+
+
+a h2{
+    text-decoration: none;
+    color:white;
+    font-family: "oriyaMN";
+    font-weight: 100;
+    font-size:60px;
+    line-height: 100px;
+    margin-left:3vw;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.user a {
+    color: white;
+}
+
+.user {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration:none;
+    color:white;
+
+}
+
+
+a .post {
+    color: white;
+}
+
+
+
+.post, .login, .new{
+    margin-top: 10px;
+    margin-right:40px;
+}
+
+.post {
+    
+    margin-right: 6vw;
+}
+
+.postindex{
+    margin: 0px 20px;
+}
+
+
+
+
+.login {
+    width: 80px;
+    margin-right: 3vw;
+}
+
+
+
+h1 {
+    font-family: "游ゴシック", YuGothic;
+    text-align: left;
+    font-weight: 100;
+    height:200px;
+    font-size: 50px;
+    line-height: 100px;
+    
+}
+
+.question {
+    width: 800px;
+    height: 260px;
+    padding: 80px 0 180px 0;
+    margin: 0 auto
+}
+
+.tidyup {
+    width : 800px;
+    height: 100px;
+    margin: 20px auto 60px auto;
+    position: relative;
+}
+
+.submit {
+    margin-left:56vw;
+    margin-top: 180px;
+}
+
+
+
+.menu {
+    height: 100px;
+    background-color: rgb(170,170,170);
+    
+}
+
+.menu-new{
+    margin: 0px 20px;
+    opacity:0.5;
+}
+
+.menu-new:hover {
+    opacity: 1;
+}
+
+.menus {
+    display:flex;
+    justify-content: flex-end;
+    color: white;
+    padding-top:12px;
+    padding-right: 8px;
+}
+
+.menus a {
+    color: white;
+    width: 120px;
+    height:80px;
+}
+
+li {
+    list-style: none;
+    /*font-size: 30px;*/
+}
+
+ul {
+    float: left;
+    padding: 72px, 100px;
+}
+
+.menu-right {
+   
+    text-align: right;
+}
+
+.menu-left {
+   
+    margin: 72px, 100px, 0, 0;
+}
+
+ul {
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.explanation {
+    
+    padding-top: 40px;
+    font-size: 12px;
+    opacity:0.6;
+    width: 800px;
+    height: 34px;
+    margin: 0 auto;
+    
+}
+
+li {
+    margin: 30px 30px;
+    color: white;
+    
+}
+
+
+
+.name {
+    width: 440px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    left: 280px;
+    border: none;
+    border-radius: 4px;
+    line-height: 32px;
+}
+
+.url {
+    width: 720px;
+    height: 32px;
+    position:absolute;
+    top: 60px;
+    left: 0;
+    border: none;
+    border-radius: 4px;
+    line-height: 32px;
+
+}
+
+select {
+    height: 36px;
+    width: 240px;
+    border: none;
+    border-radius: 4px;
+    padding-left: px;
+}
+
+.name, .url, select {
+    font-size: 12px;
+    padding-left: 10px;
+    color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.1)
+}
+
+::placeholder {
+    font-size: 12px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+  }
+
+textarea {
+    resize: none;
+}
+
+.iconjpg{
+    width: 140px;
+    position: absolute;
+    top: -54px;
+    left: 760px;
+
+    position: relative;
+}
+
+.putaway{
+    background: transparent;
+    border:none;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 100px;
+    height: 110px;
+    border-radius: 18px;
+}
+
+form {
+    height: 80px;
+}

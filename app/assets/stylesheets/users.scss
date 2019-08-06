@@ -1,0 +1,56 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.createaccountbackground {
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    width: 100vw;
+    height: 100vh;
+    margin-top: -20vh;
+}
+
+
+    .createaccount {
+        width:520px;
+        margin: -90vh auto 0 auto;
+        height: 80vh;
+        background-color:white;
+        border-radius: 10px;
+        border: 1px solid rgba($color: #000000, $alpha: 0.6);
+        text-align: center;
+
+        h1 {
+            padding-top: 120px;
+            text-align: center;
+            font-size: 30px;
+            letter-spacing: 4px;
+            font-weight: 900;
+            height: 140px;
+        }
+
+        .error-message {
+            color: red;
+        }
+
+        input {
+            width: 320px;
+            height: 20px;
+            margin-bottom: 20px;
+        }
+
+        .inputname input, .inputpassword input {
+            background-color: rgba($color: #000000, $alpha: 0.1);
+            border:none;
+            padding-left: 12px;
+            color:rgba($color: #000000, $alpha: 0.5);
+        }
+
+        .submitaccount input{
+            margin-top: 100px;
+            background-color: rgba($color: #000000, $alpha: 1);
+            color: white;
+            height: 40px;
+            border-radius: 10px;
+
+        }
+    }

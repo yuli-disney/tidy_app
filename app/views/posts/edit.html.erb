@@ -1,0 +1,10 @@
+<div class="posts-show">
+    <%= form_tag("/posts/#{@post.id}/update") do%>
+    <div class="content_edit">
+    <h4><textarea name="content"><%= @post.content %></textarea></h4>
+    </div>
+    <div class="edit">
+    <button type="submit" value="保存" class="savebutton">保存</button>
+    </div>
+    <%end%>
+</div>

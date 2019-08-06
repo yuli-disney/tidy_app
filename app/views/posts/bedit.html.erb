@@ -1,0 +1,22 @@
+<div class="wrapper_1">
+<div class="aboveposts">
+<h2>編集する</h2>
+</div>
+                <div class="posts">
+                
+                    <% @posts.each do |post| %>
+                        
+                    <div class="posts-index-item">
+                        <p class="post-contents"><%= link_to(post.content, "/posts/#{post.id}",:style=>"color:black;")%></p>
+                    
+                        <p class="post-select"><%= post.select %><p>
+                    </div>
+                    
+
+                    <%end %>
+                </div>
+                
+                    
+                </div>
+            </div>
+</html>
